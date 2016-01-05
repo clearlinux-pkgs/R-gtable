@@ -4,7 +4,7 @@
 #
 Name     : R-gtable
 Version  : 0.1.2
-Release  : 14
+Release  : 15
 URL      : http://cran.r-project.org/src/contrib/gtable_0.1.2.tar.gz
 Source0  : http://cran.r-project.org/src/contrib/gtable_0.1.2.tar.gz
 Summary  : Arrange grobs in tables.
