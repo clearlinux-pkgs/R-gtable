@@ -1,4 +1,5 @@
 PKG_NAME := R-gtable
-URL := http://cran.r-project.org/src/contrib/gtable_0.1.2.tar.gz
+URL := http://cran.r-project.org/src/contrib/gtable_0.2.0.tar.gz
+ARCHIVES :=
 
 include ../common/Makefile.common
