@@ -4,13 +4,19 @@
 #
 Name     : R-gtable
 Version  : 0.2.0
-Release  : 25
-URL      : http://cran.r-project.org/src/contrib/gtable_0.2.0.tar.gz
-Source0  : http://cran.r-project.org/src/contrib/gtable_0.2.0.tar.gz
+Release  : 26
+URL      : https://cran.r-project.org/src/contrib/gtable_0.2.0.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/gtable_0.2.0.tar.gz
 Summary  : Arrange 'Grobs' in Tables
 Group    : Development/Tools
 License  : GPL-2.0
+Requires: R-R6
 Requires: R-memoise
+Requires: R-digest
+Requires: R-magrittr
+BuildRequires : R-R6
+BuildRequires : R-digest
+BuildRequires : R-magrittr
 BuildRequires : R-memoise
 BuildRequires : clr-R-helpers
 
