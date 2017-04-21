@@ -4,7 +4,7 @@
 #
 Name     : R-gtable
 Version  : 0.2.0
-Release  : 33
+Release  : 34
 URL      : https://cran.r-project.org/src/contrib/gtable_0.2.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gtable_0.2.0.tar.gz
 Summary  : Arrange 'Grobs' in Tables
@@ -22,12 +22,15 @@ BuildRequires : clr-R-helpers
 %setup -q -c -n gtable
 
 %build
+export http_proxy=http://127.0.0.1:9/
+export https_proxy=http://127.0.0.1:9/
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1484539131
+export SOURCE_DATE_EPOCH=1492798008
 
 %install
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1484539131
+export SOURCE_DATE_EPOCH=1492798008
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -43,7 +46,7 @@ R CMD INSTALL --install-tests --built-timestamp=${SOURCE_DATE_EPOCH} --build  -l
 export LANG=C
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
-export no_proxy=localhost
+export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
 R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library gtable || :
 
@@ -53,6 +56,7 @@ R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/lib
 /usr/lib64/R/library/gtable/DESCRIPTION
 /usr/lib64/R/library/gtable/INDEX
 /usr/lib64/R/library/gtable/Meta/Rd.rds
+/usr/lib64/R/library/gtable/Meta/features.rds
 /usr/lib64/R/library/gtable/Meta/hsearch.rds
 /usr/lib64/R/library/gtable/Meta/links.rds
 /usr/lib64/R/library/gtable/Meta/nsInfo.rds
