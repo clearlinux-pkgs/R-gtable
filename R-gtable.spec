@@ -4,13 +4,13 @@
 #
 Name     : R-gtable
 Version  : 0.2.0
-Release  : 58
+Release  : 59
 URL      : https://cran.r-project.org/src/contrib/gtable_0.2.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gtable_0.2.0.tar.gz
 Summary  : Arrange 'Grobs' in Tables
 Group    : Development/Tools
 License  : GPL-2.0
-BuildRequires : clr-R-helpers
+BuildRequires : buildreq-R
 
 %description
 # gtable
@@ -26,11 +26,11 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1523306935
+export SOURCE_DATE_EPOCH=1552765187
 
 %install
+export SOURCE_DATE_EPOCH=1552765187
 rm -rf %{buildroot}
-export SOURCE_DATE_EPOCH=1523306935
 export LANG=C
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
 export FCFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
@@ -65,8 +65,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export _R_CHECK_FORCE_SUGGESTS_=false
-R CMD check --no-manual --no-examples --no-codoc -l %{buildroot}/usr/lib64/R/library gtable|| : 
-cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || : || :
+R CMD check --no-manual --no-examples --no-codoc  gtable || :
 
 
 %files
@@ -91,3 +90,11 @@ cp ~/.stash/* %{buildroot}/usr/lib64/R/library/*/libs/ || : || :
 /usr/lib64/R/library/gtable/help/paths.rds
 /usr/lib64/R/library/gtable/html/00Index.html
 /usr/lib64/R/library/gtable/html/R.css
+/usr/lib64/R/library/gtable/tests/testthat.R
+/usr/lib64/R/library/gtable/tests/testthat/Rplots.pdf
+/usr/lib64/R/library/gtable/tests/testthat/helper-grobs.r
+/usr/lib64/R/library/gtable/tests/testthat/helper-units.r
+/usr/lib64/R/library/gtable/tests/testthat/test-bind.r
+/usr/lib64/R/library/gtable/tests/testthat/test-layout.r
+/usr/lib64/R/library/gtable/tests/testthat/test-subsetting.r
+/usr/lib64/R/library/gtable/tests/testthat/test-z-order.r
