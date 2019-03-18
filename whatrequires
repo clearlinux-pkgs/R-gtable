@@ -1,4 +1,22 @@
 # This file contains recursive sources that require this package
+R-EnvStats
+R-GGally
+R-NMF
+R-SGP
+R-dendextend
+R-forecast
+R-ggjoy
 R-ggplot2
 R-gridExtra
+R-joineRML
+R-lme4
+R-lmerTest
 R-pheatmap
+R-phylogram
+R-plotly
+R-rms
+R-rsample
+R-seriation
+R-tidyverse
+R-vcdExtra
+R-viridis
