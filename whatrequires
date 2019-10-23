@@ -1,5 +1,4 @@
 # This file contains recursive sources that require this package
-R-EnvStats
 R-GGally
 R-Hmisc
 R-PerformanceAnalytics
@@ -7,6 +6,4 @@ R-cowplot
 R-gbm
 R-ggplot2
 R-gridExtra
-R-lmerTest
 R-pheatmap
-R-remote
