@@ -4,7 +4,7 @@
 #
 Name     : R-gtable
 Version  : 0.3.0
-Release  : 74
+Release  : 75
 URL      : https://cran.r-project.org/src/contrib/gtable_0.3.0.tar.gz
 Source0  : https://cran.r-project.org/src/contrib/gtable_0.3.0.tar.gz
 Summary  : Arrange 'Grobs' in Tables
@@ -28,10 +28,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1589403431
+export SOURCE_DATE_EPOCH=1589509198
 
 %install
-export SOURCE_DATE_EPOCH=1589403431
+export SOURCE_DATE_EPOCH=1589509198
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
