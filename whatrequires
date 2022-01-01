@@ -4,4 +4,5 @@ R-Hmisc
 R-cowplot
 R-ggplot2
 R-gridExtra
+R-patchwork
 R-pheatmap
