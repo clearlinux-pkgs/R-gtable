@@ -4,10 +4,10 @@
 # Using build pattern: R
 #
 Name     : R-gtable
-Version  : 0.3.2
-Release  : 96
-URL      : https://cran.r-project.org/src/contrib/gtable_0.3.2.tar.gz
-Source0  : https://cran.r-project.org/src/contrib/gtable_0.3.2.tar.gz
+Version  : 0.3.3
+Release  : 97
+URL      : https://cran.r-project.org/src/contrib/gtable_0.3.3.tar.gz
+Source0  : https://cran.r-project.org/src/contrib/gtable_0.3.3.tar.gz
 Summary  : Arrange 'Grobs' in Tables
 Group    : Development/Tools
 License  : MIT
@@ -40,10 +40,10 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1679329763
+export SOURCE_DATE_EPOCH=1679504140
 
 %install
-export SOURCE_DATE_EPOCH=1679329763
+export SOURCE_DATE_EPOCH=1679504140
 rm -rf %{buildroot}
 export LANG=C.UTF-8
 export CFLAGS="$CFLAGS -O3 -flto -fno-semantic-interposition "
